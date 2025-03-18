@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function createFlyingNumbers(event) {
-        for (let i = 0; i < 15; i++) { // Generate 15 flying numbers
+        for (let i = 0; i < 10; i++) { // Generate 15 flying numbers
             const num = document.createElement("span");
             num.textContent = Math.floor(Math.random() * 100); // Random number 0-99
             num.classList.add("flying-number");

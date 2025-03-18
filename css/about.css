@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     /* Set both background images */
-    background-image: url('/foto/scc.png'), url('/foto/network.jpg');
+    background-image: url('/git-Alejandro-star/foto/scc.png'), url('/git-Alejandro-star/foto/network.jpg');
     background-position: left center, right center;  /* Position SSC.png to the left and network.jpg to the right */
     background-repeat: no-repeat;                   /* Prevent images from repeating */
     background-size: 30%, 30%;                      /* Scale both images to 40% of the width */
