@@ -1,0 +1,118 @@
+/* General reset for body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    }
+
+/* Navbar styles */
+.navbar {
+    background-color: #58728d;
+}
+
+.navbar-brand {
+    color: #ff9800;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-link.active {
+    color: white;
+}/* Header styles */
+header {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 30px;
+    color: white;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+/* Contact Me section styles */
+section {
+    color: #495057;
+    font-size: 18px;
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background to make text more readable */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+section a {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
+/* LinkedIn Icon Link styles */
+.icon-link {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.icon-link img {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+.icon-link:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+    section {
+        padding: 20px;
+    }
+    .icon-link img {
+        width: 40px;
+        height: 40px;
+    }
+}
+/* LinkedIn Icon Link styles */
+.icon-link {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.icon-link img {
+    width: 70px;  /* Increased size */
+    height: 70px; /* Increased size */
+    vertical-align: middle;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Added transition for shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.icon-link:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+    section {
+        padding: 20px;
+    }
+    .icon-link img {
+        width: 60px;  /* Slightly smaller size for smaller screens */
+        height: 60px; /* Slightly smaller size for smaller screens */
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Add animation styling */
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(180deg) scale(1.1);
+            }
+            100% {
+                transform: rotate(360deg) scale(1);
+            }
+        }
+
+        button.clicked {
+            animation: spin 0.6s ease;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to my website!</h1>
+    <button id="spinButton" onclick="handleButtonClick()">Click Me!</button>
+
+    <script>
+        function handleButtonClick() {
+            const button = document.getElementById('spinButton');
+
+            // Add the 'clicked' class to trigger animation
+            button.classList.add('clicked');
+
+            // Redirect to a new page after a short delay (to allow animation to complete)
+            setTimeout(() => {
+                button.classList.remove('clicked'); // Reset animation
+                window.location.href = 'ePortfolio.html'; // Navigate to the new page
+            }, 600); // Match the duration of the animation (0.6s)
+        }
+    </script>
+</body>
+</html>

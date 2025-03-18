@@ -1,0 +1,98 @@
+/* Digital Futuristic Background */
+body {
+    background: #0d0d0d;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Header */
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+}
+
+/* Skills Section */
+.skills ul {
+    list-style: none;
+    padding: 0;
+    max-width: 400px;
+    margin: auto;
+}
+
+.skills .list-group-item {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 255, 255, 0.5);
+    color: #00ffff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.skills .list-group-item:hover {
+    background: rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+}
+
+/* Slider */
+.slider-container label {
+    font-size: 1.2rem;
+    color: #00ffff;
+}
+
+input[type='range'] {
+    width: 50%;
+    accent-color: #00ffff;
+}
+.flying-number {
+    position: absolute;
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+    pointer-events: none;
+}
+@import url('https://fonts.googleapis.com/css?
+family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    height: 100vh;
+    overflow: hidden;
+    background: #000; /* Black background for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    position: relative;
+    font-size: 1.5em;
+    letter-spacing: -0.05em;
+    line-height: 0.7em;
+    text-align: center;
+    
+    /* Background Image */
+    background: url('/foto/vet.JPG'), url('/foto/vet.JPG');
+    background-blend-mode: color-dodge;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    /* Text Masking */
+    -webkit-background-clip: text;
+    color: transparent;
+}

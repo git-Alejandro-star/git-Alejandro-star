@@ -1,0 +1,109 @@
+/* General reset for body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    /* Set both background images */
+    background-image: url('/foto/scc.png'), url('/foto/network.jpg');
+    background-position: left center, right center;  /* Position SSC.png to the left and network.jpg to the right */
+    background-repeat: no-repeat;                   /* Prevent images from repeating */
+    background-size: 30%, 30%;                      /* Scale both images to 40% of the width */
+    height: 100vh;                                  /* Ensure the background images cover the entire height */
+    background-attachment: fixed;                   /* Keep background images fixed during scrolling */
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    color: #ff9800;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-link.active {
+    color: white;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 30px;
+    color: white;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+/* About Me section styles */
+.about-me {
+    color: #495057;
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background to make text more readable */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Slider container styles */
+.slider-container {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 500px;
+}
+
+/* Range slider styles */
+#redirect-slider {
+    width: 80%;
+    height: 10px;
+    border-radius: 5px;
+    background: #e0e0e0;
+    appearance: none;
+    outline: none;
+    transition: background 1.3s ease;
+}
+
+#redirect-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ff9800;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#redirect-slider::-webkit-slider-thumb:hover {
+    background: #ff5722;
+}
+
+#redirect-slider:focus {
+    background: #dcdcdc;
+}
+
+/* For non-webkit browsers like Firefox */
+#redirect-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ff9800;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#redirect-slider::-moz-range-thumb:hover {
+    background: #ff5722;
+}
+
+#redirect-slider:focus {
+    background: #dcdcdc;
+}

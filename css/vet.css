@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-portrait {
+    height: 100vh;
+    overflow: hidden;
+    background: #000; /* Black background for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-portrait p {
+    position: relative;
+    font-size: 1.5em;
+    letter-spacing: -0.05em;
+    line-height: 0.7em;
+    text-align: center;
+    
+    /* Background Image */
+    background: url('/foto/vet.JPG'), url('/foto/vet.JPG');
+    background-blend-mode: color-dodge;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    /* Text Masking */
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Button Styling */
+a button {
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border: none;
+    background-color: #ff6347; /* Tomato color */
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+a button:hover {
+    background-color: #ff4500; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+#animated-text span {
+    display: inline-block;
+    transition: transform 0.2s ease-in-out, opacity 0.5s;
+}

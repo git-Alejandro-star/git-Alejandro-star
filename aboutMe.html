@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/about.css">
+</head>
+<body>
+
+    <!-- Bootstrap Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="ePortfolio.html">Alejandro's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="aboutMe.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactMe.html">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Header -->
+    <header class="text-center py-4">
+        <h1>About Me</h1>
+    </header>
+
+    <!-- About Me Section -->
+    <section class="about-me text-center px-4">
+        <h3>Who Am I?</h3>
+        <p>Hello! I'm Alejandro Sanchez Zuniga, a passionate software developer with a keen interest in digital marketing. I love solving problems through technology, and I am always eager to learn new skills to stay up-to-date in this fast-paced field.</p>
+        <h4>Background</h4>
+        <p>I graduated with a degree in Computer Science and have been working on various projects involving web development, software design, and e-commerce solutions. In addition, I have extensive experience in creating digital marketing strategies to help businesses thrive in the online world.</p>
+        <h4>Hobbies and Interests</h4>
+        <p>When I'm not coding or working on projects, I enjoy exploring new technologies, reading about the latest trends in digital marketing, and spending time with my family and friends.</p>
+    </section>
+
+    <!-- Range Slider -->
+    <div class="slider-container text-center my-5">
+        <label for="redirect-slider">Slide to go back:</label>
+        <input type="range" id="redirect-slider" min="0" max="100" value="0" class="form-range">
+    </div>
+
+    <script>
+        document.getElementById("redirect-slider").addEventListener("input", function() {
+            if (this.value == 100) {
+                window.location.href = "ePortfolio.html";
+            }
+        });
+    </script>
+
+    <!-- Bootstrap JS and Popper.js (Ensure they are included for functionality) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybFfPpt3RkFfGGqF62l4npS/C7pcpDDZ+9U6g7b0h81X9v9J1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0+Qf5h8DgkF4e0sw2Dsc5HfB06hsmcX5bzxxp0g6uS2J++tr" crossorigin="anonymous"></script>
+
+</body>
+</html>
